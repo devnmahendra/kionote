@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible KioNote problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Remove private chat content before sharing examples.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: KioNote version
+      placeholder: v0.1.0

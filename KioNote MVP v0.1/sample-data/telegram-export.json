@@ -1,0 +1,63 @@
+{
+  "name": "Cloud Native Helpers",
+  "type": "private_supergroup",
+  "id": 101,
+  "messages": [
+    {
+      "id": 1,
+      "type": "message",
+      "date": "2026-06-01T09:00:00",
+      "from": "Maya",
+      "text": "How do I deploy our API on Kubernetes without maintaining lots of YAML?"
+    },
+    {
+      "id": 2,
+      "type": "message",
+      "date": "2026-06-01T09:04:00",
+      "from": "Arjun",
+      "text": "Use the Helm chart in the deploy folder. Try helm upgrade --install api ./deploy/chart."
+    },
+    {
+      "id": 3,
+      "type": "message",
+      "date": "2026-06-01T09:06:00",
+      "from": "Maya",
+      "text": "That Helm command solved the Kubernetes deployment issue, thanks!"
+    },
+    {
+      "id": 4,
+      "type": "message",
+      "date": "2026-06-01T11:12:00",
+      "from": "Luis",
+      "text": "What is the recommended way to scale the Kubernetes cluster?"
+    },
+    {
+      "id": 5,
+      "type": "message",
+      "date": "2026-06-01T11:20:00",
+      "from": "Arjun",
+      "text": "For cluster scaling use the autoscaler. The docs recommend setting requests before enabling autoscaling."
+    },
+    {
+      "id": 6,
+      "type": "message",
+      "date": "2026-06-02T08:30:00",
+      "from": "Nina",
+      "text": "The monitoring dashboard shows high memory after enabling Kubernetes autoscaling."
+    },
+    {
+      "id": 7,
+      "type": "message",
+      "date": "2026-06-02T08:35:00",
+      "from": "Arjun",
+      "text": "Try adjusting memory requests. That usually fixes autoscaling decisions and dashboard noise."
+    },
+    {
+      "id": 8,
+      "type": "message",
+      "date": "2026-06-02T10:00:00",
+      "from": "Nina",
+      "text": "The memory requests fix worked. We should add it to the Kubernetes docs."
+    }
+  ]
+}

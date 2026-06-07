@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" role="img" aria-label="KioNote architecture diagram">
+  <rect width="1000" height="260" rx="24" fill="#f4f2e9"/>
+  <style>
+    text{font-family:Arial,sans-serif;fill:#17211b}.title{font-size:24px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:12px;fill:#6b756e}.box{fill:#fffdf6;stroke:#d9d9cc;stroke-width:2}.accent{fill:#166447}.accentText{fill:white}
+  </style>
+  <text x="50" y="48" class="title">From conversation to community knowledge</text>
+  <rect x="50" y="90" width="150" height="90" rx="16" class="box"/><text x="125" y="127" text-anchor="middle" class="label">Telegram JSON</text><text x="125" y="151" text-anchor="middle" class="small">authors + timestamps</text>
+  <path d="M205 135h55" stroke="#166447" stroke-width="3"/><path d="m253 128 10 7-10 7" fill="#166447"/>
+  <rect x="270" y="90" width="150" height="90" rx="16" class="box"/><text x="345" y="127" text-anchor="middle" class="label">Normalizer</text><text x="345" y="151" text-anchor="middle" class="small">clean messages</text>
+  <path d="M425 135h55" stroke="#166447" stroke-width="3"/><path d="m473 128 10 7-10 7" fill="#166447"/>
+  <rect x="490" y="90" width="150" height="90" rx="16" class="accent"/><text x="565" y="127" text-anchor="middle" class="label accentText">Embeddings</text><text x="565" y="151" text-anchor="middle" class="small accentText">local or OpenAI</text>
+  <path d="M645 135h55" stroke="#166447" stroke-width="3"/><path d="m693 128 10 7-10 7" fill="#166447"/>
+  <rect x="710" y="90" width="110" height="90" rx="16" class="box"/><text x="765" y="127" text-anchor="middle" class="label">Store</text><text x="765" y="151" text-anchor="middle" class="small">messages</text>
+  <path d="M825 135h55" stroke="#166447" stroke-width="3"/><path d="m873 128 10 7-10 7" fill="#166447"/>
+  <rect x="890" y="90" width="75" height="90" rx="16" class="box"/><text x="927" y="127" text-anchor="middle" class="label">UI</text><text x="927" y="151" text-anchor="middle" class="small">search</text>
+</svg>

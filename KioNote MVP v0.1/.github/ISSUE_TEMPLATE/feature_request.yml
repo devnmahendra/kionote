@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose an improvement for community knowledge workflows
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Community problem
+      description: What recurring community pain would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed workflow
+      description: Describe the smallest useful version.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy considerations
+      description: Note any impact on imported messages, identities, or retention.

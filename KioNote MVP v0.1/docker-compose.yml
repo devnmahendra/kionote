@@ -1,0 +1,12 @@
+services:
+  kionote:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - kionote-data:/app/data
+
+volumes:
+  kionote-data:

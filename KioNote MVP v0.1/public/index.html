@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KioNote converts community conversations into searchable knowledge.">
+  <title>KioNote · Community knowledge, distilled</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>K</span>KioNote</a>
+    <span class="badge">OSS MVP v0.1</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Community intelligence</p>
+        <h1>Turn chat history into <em>shared knowledge.</em></h1>
+        <p class="lede">Import Telegram conversations. Discover answers, recurring questions, useful topics, and the people moving the community forward.</p>
+      </div>
+      <form id="import-form" class="import-card">
+        <div class="import-icon">↑</div>
+        <h2>Import Telegram export</h2>
+        <p>Upload the <code>result.json</code> file from Telegram Desktop.</p>
+        <input id="file" type="file" accept=".json,application/json" required>
+        <button type="submit">Build knowledge base</button>
+        <p id="import-status" class="status"></p>
+      </form>
+    </section>
+
+    <section class="search-wrap">
+      <form id="search-form" class="search">
+        <input id="query" type="search" placeholder="Ask your community knowledge…">
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-results" class="search-results hidden"></div>
+    </section>
+
+    <section id="stats" class="stats"></section>
+
+    <section class="grid">
+      <article class="panel summary-panel">
+        <p class="eyebrow">AI digest</p>
+        <h2>What the community is talking about</h2>
+        <p id="summary" class="summary">Import a conversation to generate a digest.</p>
+        <div id="topics" class="topics"></div>
+      </article>
+
+      <article class="panel">
+        <p class="eyebrow">Community signal</p>
+        <h2>Helpful contributors</h2>
+        <div id="experts" class="list empty">No contributors yet.</div>
+      </article>
+
+      <article class="panel wide">
+        <p class="eyebrow">Frequently answered</p>
+        <h2>Questions turned into knowledge</h2>
+        <div id="faqs" class="faq-grid empty">No FAQs generated yet.</div>
+      </article>
+
+      <article class="panel wide">
+        <p class="eyebrow">Living wiki</p>
+        <h2>Generated knowledge articles</h2>
+        <div id="articles" class="article-grid empty">No articles generated yet.</div>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
